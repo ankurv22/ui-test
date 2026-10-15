@@ -9,7 +9,7 @@ export function useDelayedStatus(status: ChatStatus, delay: number) {
       () => {
         setDelayedStatus(status)
       },
-      status === "submitted" ? delay : 0
+      status === "submitted123" ? delay : 0
     )
 
     return () => window.clearTimeout(timeout)
